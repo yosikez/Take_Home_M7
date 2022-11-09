@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'caviar';
+    font-weight: 900;
+}
+
+@font-face {
+
+    font-family: caviar;
+    src: url(CaviarDreams_Bold.ttf);
+}
+
+body {
+    background-color: #1E1E2E;
+    padding-left: 450px;
+    padding-top: 150px;
+}
+
+.form-wrap {
+    border-radius: 25px;
+    background-color: #383A53;
+    text-align: center;
+    padding: 50px;
+    width: fit-content;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.7);
+}
+h3 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #989bc7;
+}
+
+form {
+    background-color: #383A53;
+    display: grid;
+    grid-template-columns: 1;
+    grid-gap: 20px;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+input, button { 
+    width: 400px;
+    height: 50px;
+    background-color: #383A53;
+    color: #989bc7;
+    border-radius: 25px;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.7);
+}
+::placeholder {
+    color: #989bc7;
+}
+
+#user, #pass {
+    background-position-y: center;
+    background-position-x: 10px;
+    background-image: url('account.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+#pass {
+    background-image: url('lock.png');
+}
+
+button {
+    background-color: #44476d;
+    color: #989bc7;
+    cursor: pointer;
+}

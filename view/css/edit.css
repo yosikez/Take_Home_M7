@@ -1,0 +1,29 @@
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px #27293D;
+    background-color: #27293D;
+  }
+
+input, #submit {
+    border: 0;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #383A53;
+    width: 100%;
+}
+#submit {
+    width: 20%;
+}
+form #table-update tr, td {
+    border: 0;
+    font-size: 20px;
+    
+}
+form #table-update tr, td:first-child {
+    width: 20%;
+}
+form #table-update tr, td:last-child {
+    width: 80%;
+}
