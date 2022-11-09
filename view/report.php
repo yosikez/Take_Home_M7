@@ -49,7 +49,7 @@ $user_sesi = $user->getUserSession();
 
                     <div class="dropdown-content">
                         <a href="">Detail</a>
-                        <a href="">Log Out</a>
+                        <a href="../login.php">Log Out</a>
                     </div>
                 </div>
             </nav>

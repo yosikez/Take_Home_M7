@@ -47,7 +47,7 @@ $user_sesi = $user->getUserSession();
 
                     <div class="dropdown-content">
                         <a href="">Detail</a>
-                        <a href="">Log Out</a>
+                        <a href="../login.php">Log Out</a>
                     </div>
                 </div>
             </nav>
@@ -56,12 +56,6 @@ $user_sesi = $user->getUserSession();
 
         <section class="container-content">
             <div class="sidebar">
-                <div class="menu-sidebar">
-                    <div class="icon">
-                        <box-icon name='spreadsheet' color="white"></box-icon>
-                    </div>
-                    <a href="index.php">Main</a>
-                </div>
                 <div class="menu-sidebar">
                     <div class="icon">
                         <box-icon name='spreadsheet' color="white"></box-icon>
