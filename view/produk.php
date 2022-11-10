@@ -46,7 +46,6 @@ $user_sesi = $user->getUserSession();
                     <a href=""><?= $user_sesi['nama'] ?></a>
 
                     <div class="dropdown-content">
-                        <a href="">Detail</a>
                         <a href="../login.php">Log Out</a>
                     </div>
                 </div>

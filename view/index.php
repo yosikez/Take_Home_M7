@@ -47,7 +47,6 @@ $user_sesi = $user->getUserSession();
                     <a href=""><?=$user_sesi['nama']?></a>
 
                     <div class="dropdown-content">
-                        <a href="">Detail</a>
                         <a href="../login.php">Log Out</a>
                     </div>
                 </div>
@@ -95,6 +94,7 @@ $user_sesi = $user->getUserSession();
                                 <th>Shipping Date</th>
                                 <th>Ship Mode</th>
                                 <th>Product Code</th>
+                                <th>Product Name</th>
                                 <th>Quantity</th>
                                 <th>Profit</th>
                                 <th>Shipping Cost</th>
@@ -102,7 +102,7 @@ $user_sesi = $user->getUserSession();
                             </tr>
                             <?php
                             $no = 1;
-                            foreach ($data->getData("pen", 10) as $dt) :
+                            foreach ($data->getJoin(10) as $dt) :
                             ?>
                                 <tr>
                                     <td><?= $no++ ?></td>
@@ -110,6 +110,7 @@ $user_sesi = $user->getUserSession();
                                     <td><?= $dt['shipping_date'] ?></td>
                                     <td><?= $dt['ship_mode'] ?></td>
                                     <td><?= $dt['product_code'] ?></td>
+                                    <td><?= $dt['product'] ?></td>
                                     <td><?= $dt['quantity'] ?></td>
                                     <td>$ <?= $dt['profit'] ?></td>
                                     <td>$ <?= $dt['shipping_cost'] ?></td>

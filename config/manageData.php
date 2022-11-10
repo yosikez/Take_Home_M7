@@ -16,6 +16,15 @@
     
         }
         
+
+        public function getJoin($limit){
+            $query = $this->conn->query("select pen.*, bar.product from pen inner join bar on pen.product_code = bar.product_code limit $limit");
+            while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
+                $data[] = $row;
+            }
+            return $data;
+        }
+
         public function getDataPen() {
         
             $query = $this->conn->query("SELECT * FROM pen GROUP BY order_id DESC LIMIT 10 ");
